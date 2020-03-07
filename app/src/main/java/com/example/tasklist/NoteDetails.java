@@ -7,6 +7,7 @@ public class NoteDetails {
         String date;
         int shape;
         int status;
+        Boolean checked;
 
     public NoteDetails(String title, String description, String date, int shape, int status) {
         this.title = title;
@@ -19,17 +20,20 @@ public class NoteDetails {
     public NoteDetails() {
     }
 
-    public NoteDetails(String title, String description, int shape, int status) {
+    public NoteDetails(String title, String description, String date, int shape, int status, Boolean checked) {
         this.title = title;
         this.description = description;
+        this.date = date;
         this.shape = shape;
         this.status = status;
+        this.checked = checked;
     }
-
-    public NoteDetails(String title, String description, int shape) {
+    public NoteDetails(String title, String description, String date, int shape, Boolean checked) {
         this.title = title;
         this.description = description;
+        this.date = date;
         this.shape = shape;
+        this.checked = checked;
     }
 
     public String getTitle() {
@@ -70,6 +74,14 @@ public class NoteDetails {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public Boolean getChecked() {
+        return checked;
+    }
+
+    public void setChecked(Boolean checked) {
+        this.checked = checked;
     }
 }
 
