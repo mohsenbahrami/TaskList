@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomListAdapter extends ArrayAdapter<NoteDetails> {
-    public CustomListAdapter(Context context, ArrayList<NoteDetails> noteDetails) {
-        super(context, 0, noteDetails);
+    public CustomListAdapter(Context context, ArrayList<NoteDetails> note) {
+        super(context, 0, note);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class CustomListAdapter extends ArrayAdapter<NoteDetails> {
         TextView note_title = (TextView)row.findViewById(R.id.note_title);
         TextView note_description = (TextView)row.findViewById(R.id.note_description);
         TextView note_date = (TextView)row.findViewById(R.id.note_date);
-        CheckBox note_checkBox = (CheckBox)row.findViewById(R.id.note_checkBox);
+        //CheckBox note_checkBox = (CheckBox)row.findViewById(R.id.note_checkBox);
 
         //setting these elements from the contact
 
@@ -41,7 +41,7 @@ public class CustomListAdapter extends ArrayAdapter<NoteDetails> {
         note_title.setText(current_note.getTitle());
         note_description.setText(current_note.getDescription());
         note_date.setText(current_note.getDate());
-        note_checkBox.setChecked(current_note.getChecked());
+        //note_checkBox.setChecked(current_note.getChecked());
 
 
 
