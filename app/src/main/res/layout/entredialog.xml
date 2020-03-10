@@ -56,46 +56,67 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_height="49dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tax_priority"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Priority: " />
+
+    <RadioGroup
+        android:id="@+id/input_radioGroup"
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOW" />
+
+        <RadioButton
+            android:id="@+id/rb_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MEDIUM" />
+
+        <RadioButton
+            android:id="@+id/rb_high"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HIGH" />
+    </RadioGroup>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="49dp"
         android:orientation="horizontal">
 
 
-        <TextView
-            android:id="@+id/tax_priority"
-            android:layout_width="208dp"
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Priority: " />
+            android:text="ADD" />
 
-        <RadioGroup
-            android:id="@+id/input_radioGroup"
-            android:layout_width="385dp"
-            android:layout_height="match_parent"
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_low"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="LOW" />
-
-            <RadioButton
-                android:id="@+id/rb_medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="MEDIUM" />
-
-            <RadioButton
-                android:id="@+id/rb_high"
-                android:layout_width="89dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="HIGH" />
-        </RadioGroup>
+            android:text="CANCEL" />
     </LinearLayout>
 
 </LinearLayout>

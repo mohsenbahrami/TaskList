@@ -6,34 +6,24 @@ public class NoteDetails {
         String description;
         String date;
         int shape;
-        int status;
-        Boolean checked;
+        Boolean checked = false;
 
-    public NoteDetails(String title, String description, String date, int shape, int status) {
-        this.title = title;
-        this.description = description;
-        this.date = date;
-        this.shape = shape;
-        this.status = status;
-    }
-
-    public NoteDetails() {
-    }
-
-    public NoteDetails(String title, String description, String date, int shape, int status, Boolean checked) {
-        this.title = title;
-        this.description = description;
-        this.date = date;
-        this.shape = shape;
-        this.status = status;
-        this.checked = checked;
-    }
     public NoteDetails(String title, String description, String date, int shape, Boolean checked) {
         this.title = title;
         this.description = description;
         this.date = date;
         this.shape = shape;
         this.checked = checked;
+    }
+
+    public NoteDetails() {
+    }
+
+    public NoteDetails(String title, String description, String date, int shape) {
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.shape = shape;
     }
 
     public String getTitle() {
@@ -66,14 +56,6 @@ public class NoteDetails {
 
     public void setShape(int shape) {
         this.shape = shape;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
     }
 
     public Boolean getChecked() {
